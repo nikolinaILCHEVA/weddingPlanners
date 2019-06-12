@@ -1,0 +1,135 @@
+.body{
+	background-image: url("./cover1.jpg");
+	background-size: cover ;
+	color:#34495E ;
+	font-size: 87.5%; /*Base font size is 14px */
+	font-family: Ariel, sans-serif;
+	line-height:1.5;
+	text-align: left;
+	margin: 0 auto; 
+	width: 70%;
+	clear: both; /*No floating element on the left or right*/}
+
+a{text-decoration: none;}
+
+
+a:hover, a:active{
+	background-color: #A2D9CE ;}
+
+.mainheader img{
+	width: 100%;
+	height: 800%;
+	margin: 1% auto;
+	border-radius: 5px;}
+  
+
+.topnav {
+  overflow: hidden;
+  background-color: #FAD7A0;}
+
+.topnav a {
+  float: left;
+  color:#2E4053;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;}
+
+.topnav a:hover {
+  background-color:  #A2D9CE ;
+  color: black;}
+
+.topnav a.active {
+  background-color: #A2D9CE ;
+  color: white;}  
+  
+
+
+.mainContent{
+	line-height: 25px;
+	border-radius: 5px;
+    color: #34495E;
+    background-color:antiquewhite ;}
+
+.content{
+	width: 70%;
+	float: left;
+     color: #34495E;}
+
+.topcontent{
+	background-color:antiquewhite;
+     color: #34495E;
+	border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 2%;
+	opacity:.80;}
+
+.bottomcontent{
+	background-color:antiquewhite;
+     color: #34495E;
+	border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 2%;
+	opacity:.80;}
+
+
+
+.top-sidebar{
+	width:21%;
+	float: left;
+	background-color:#FAD7A0;
+     color: #34495E;
+    border-radius: 5px;
+	margin: 2% 0 2% 3%;
+	padding: 2% 3%;
+	opacity:.80;}
+
+
+.middle-sidebar{
+	width:21%;
+	float: left;
+	background-color:#FAD7A0;
+     color: #34495E;
+	border-radius: 5px;
+	margin: 2% 0 2% 3%;
+	padding: 2% 3%;
+	opacity:.80;}
+
+.bottom-sidebar{
+	width:21%;
+	float: left;
+	background-color:#FAD7A0;
+     color: #34495E;
+	border-radius: 5px;
+	margin: 2%  2% 3%;
+	padding: 2% 3%;
+	opacity:.80;
+    float: right;}
+
+.mainfooter{
+	width:100%;
+	float: left;
+	height:40px;
+	border-radius: 5px;
+	background-color:#666;
+	margin: 2% 0;
+	opacity:.70;}
+
+.mainfooter p{
+	width:92%;
+	margin:2% auto;
+	color:#fff;
+	margin: 10px auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+

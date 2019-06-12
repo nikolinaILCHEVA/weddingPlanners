@@ -1,0 +1,206 @@
+<!doctype html><!-- open html -->
+<html lang="en">
+<head><!-- open head -->
+	<title>Contac Us</title>
+	<meta charset="utf-8"/>
+<!-- connect css page -->
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- open style and creating css for table -->
+<style> 
+
+       table{
+            width: 100%;
+        color:#34495E;
+            border-style: none;
+        position: relative;
+        float: left;
+        }
+        td, th {text-align:center;
+        padding:20px;
+            background-color: antiquewhite;
+      }
+        
+        
+
+               td tr:nth-child(8)
+         rightcolumn{
+             float: left;
+             width: 250px;
+         }
+    
+    
+ </style>  
+  <!-- close style --> 
+   </head>
+    <!-- close head -->
+    
+   <!-- open body --> 
+<body class="body">
+	<header class="mainheader">
+	<img src="backCover.jpg" width= "100" height="200" alt="wedding couple">
+		
+	<!-- open div for navigation menu -->
+        <div class="topnav">
+         <a href="index.html">Home</a>
+         <a href="gallery.html">Gallery</a>
+             <a href="services.html">Services</a> 
+  <a class="active" href="#contact.html">ContactUs</a>
+ 
+</div><!-- close div -->
+	</header><!-- close header -->
+    
+            <h1>J S Wedding Planners- Contact Us page</h1>
+       <!-- create table -->
+            <table > 
+<caption>Business Hours</caption>
+    <tr>
+        <th>Day</th>
+        <th>Open</th>
+        <th>Closed</th>
+    </tr>
+     <tr>           
+        <td> Monday</td>
+        <td>09:00</td>
+        <td>17:00</td>
+    </tr>
+    <tr>
+         <td>Tuesday</td>
+         <td>09:00</td>
+         <td>17:00</td>
+    </tr> 
+    <tr>
+          <td>Wednesday</td>
+           <td>09:00</td>
+           <td>17:00</td>
+     </tr>
+     <tr>
+          <td>Thursday</td>
+           <td>09:00</td>
+           <td>17:00</td>
+    </tr>
+    <tr>
+          <td>Friday</td>
+           <td>09:00</td>
+           <td>17:00</td>
+     </tr>
+       <tr>
+          <td>Saturday</td>
+           <td
+               colspan="2">Closed</td>
+       </tr>
+        <tr>
+          <td>Sunday</td>
+           <td
+               colspan="2">Closed</td>
+        </tr>
+       
+     </table> 
+     <!-- close table -->     
+            
+  <!-- open div for map -->      
+                
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+<!-- java sript for map -->
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:15,
+}
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiNYlpLjF3EK5jgNlGZlauOoHpKJg-lxg&callback=myMap"></script>
+    <!-- end of java ssript--> 
+    
+    <!-- create contact form -->
+        <fieldset><legend>Customer Query form</legend>
+            
+      <table><!-- table to contain the form -->
+      <tr>
+          <td>Name:</td>
+<td> <input type="text"
+            name="customer_name"
+                      tabindex="1" accesskey="C"
+
+            placeholder="Name" required></td>
+              
+          </tr>
+           <tr>
+            
+          <td>Email:</td>
+         
+          <td><input type="email"
+            name="customer_email" 
+          tabindex="2"
+           placeholder="Email" required> </td>
+         
+           </tr>
+          <tr>
+              
+              <td>Comments:</td>
+              <td><textarea rows="10"
+            cols="30"
+            name="customer_comm">Enter your comments...</textarea>
+              
+             </td>
+       
+           </tr>
+          <tr>
+              <td></td>
+         <td> 
+          <input type="submit" name="Submit"
+               value="Send">
+             &nbsp;
+        <input type="reset" name="clear"
+               value="Reset">
+       
+       
+            </tr>
+            </table><!-- close table -->
+         </fieldset>    <!-- close form --> 
+       
+    
+    <!-- java script for the form -->
+ <script>
+           <form action="abc.php" method="post">
+             <div id="content">
+       <br><br>
+          
+    
+    function validateForm(){
+        
+        var x = document.forms["myForm"]["fname"].value;
+        if(x==null|| x==""){
+            
+            alert ("Name must be filled out");
+            return false;
+        }
+        var x = document.forms["myForm"]["email"].value;
+        if (x==null|| x==""){
+            
+            alert ("Email must be filled out!");
+            return false;
+        }
+    }
+   
+ </script>   <!-- close script --> 
+        
+           
+	     <!-- footer--> 
+	<footer class="mainfooter">
+		<p>Copyright &copy;
+           <a href="contact.html">www.Contact_with_the_Planners.com</a>
+            </p>
+	</footer> <!-- close footer --> 
+   
+    </body> <!-- close body --> 
+
+    
+</html> <!-- close html --> 
